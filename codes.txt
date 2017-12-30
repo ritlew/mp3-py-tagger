@@ -1,0 +1,74 @@
+AENC,Encryption
+APIC,Attached Picture
+COMM,Comments
+COMR,Commercial Frame
+ENCR,Encryption Method Registration
+EQUA,Equalization
+ETCO,Event Timing Codes
+GEOB,General Encapsulated Object
+GRID,Group Identification Registration
+IPLS,Involved People List
+LINK,Linked Information
+MCDI,Music Cd Identifier
+MLLT,Mpeg Location Lookup Table
+OWNE,Ownership Frame
+PRIV,Private Frame
+PCNT,Play Counter
+POPM,Popularimeter
+POSS,Position Synchronisation Frame
+RBUF,Recommended Buffer Size
+RVAD,Relative Volume Adjustment
+RVRB,Reverb
+SYLT,Synchronized Lyric/Text
+SYTC,Synchronized Tempo Codes
+TALB,Album/Movie/Show Title
+TBPM,Bpm (Beats Per Minute)
+TCOM,Composer
+TCON,Content Type
+TCOP,Copyright Message
+TDAT,Date
+TDLY,Playlist Delay
+TENC,Encoded By
+TEXT,Lyricist/Text Writer
+TFLT,File Type
+TIME,Time
+TIT1,Content Group Description
+TIT2,Title/Songname/Content Description
+TIT3,Subtitle/Description Refinement
+TKEY,Initial Key
+TLAN,Language(S)
+TLEN,Length
+TMED,Media Type
+TOAL,Original Album/Movie/Show Title
+TOFN,Original Filename
+TOLY,Original Lyricist(S)/Text Writer(S)
+TOPE,Original Artist(S)/Performer(S)
+TORY,Original Release Year
+TOWN,File Owner/Licensee
+TPE1,Lead Performer(S)/Soloist(S)
+TPE2,Band/Orchestra/Accompaniment
+TPE3,Conductor/Performer Refinement
+TPE4,Interpreted, Remixed, Or Otherwise Modified By
+TPOS,Part Of A Set
+TPUB,Publisher
+TRCK,Track Number/Position In Set
+TRDA,Recording Dates
+TRSN,Internet Radio Station Name
+TRSO,Internet Radio Station Owner
+TSIZ,Size
+TSRC,Isrc (International Standard Recording Code)
+TSSE,Software/Hardware And Settings Used For Encoding
+TYER,Year
+TXXX,User Defined Text Information Frame
+UFID,Unique File Identifier
+USER,Terms Of Use
+USLT,Unsychronized Lyric/Text Transcription
+WCOM,Commercial Information
+WCOP,Copyright/Legal Information
+WOAF,Official Audio File Webpage
+WOAR,Official Artist/Performer Webpage
+WOAS,Official Audio Source Webpage
+WORS,Official Internet Radio Station Homepage
+WPAY,Payment
+WPUB,Publishers Official Webpage
+WXXX,User Defined Url Link Frame
