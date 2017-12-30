@@ -38,9 +38,11 @@ class ID3v1Handler(ID3Handler):
 
 	def read_all(self):
 		if self.raw_data != None:
-			for info in self.data_info:
-				self.metadata[info[0]] = self.data_handlers[info[3]](self.raw_data[info[1] : info[1] + info[2]])
+			self.metadata = {
+				info[0]: self.data_handlers[info[3]](self.raw_data[info[1]: info[1] + info[2]]) for info in self.data_info
+			 }
 		return self.metadata
+
 class ID3v2Handler(ID3Handler):
 	def __init__(self):
 		super(ID3v1Handler, self).__init__()
