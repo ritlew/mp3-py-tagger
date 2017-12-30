@@ -31,21 +31,33 @@ class ID3v1Handler(ID3Handler):
 		]
 
 		# handlers for converting data from bytes
-		self.data_handlers = {
+		self.read_handlers = {
 			"str": lambda data: data.decode().split('\x00')[0],
 			"int": lambda data: int.from_bytes(data, byteorder="big")
+		}
+
+		self.write_handlers = {
+			"str": lambda data, length: data[0:length].encode().ljust(length, b'\0'),
+			"int": lambda data, length: data.to_bytes(length, 'big')
 		}
 
 	def read_all(self):
 		if self.raw_data != None:
 			self.metadata = {
-				info[0]: self.data_handlers[info[3]](self.raw_data[info[1]: info[1] + info[2]]) for info in self.data_info
+				info[0]: self.read_handlers[info[3]](self.raw_data[info[1]: info[1] + info[2]]) for info in self.data_info
 			 }
 		return self.metadata
 
+	def format_all(self):
+		byte_string = b"ID3" + b"".join([
+			self.write_handlers[self.data_info[i][3]](list(self.metadata.values())[i], self.data_info[i][2]) for i in range(len(self.data_info))
+		])
+		return byte_string
+
+
 class ID3v2Handler(ID3Handler):
 	def __init__(self):
-		super(ID3v1Handler, self).__init__()
+		super(ID3v2Handler, self).__init__()
 
 	def read_all(self):
 		pass
